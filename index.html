@@ -8,21 +8,22 @@
 <body>
     <div>
         <label for="site-search">Book Search:</label>
-        <input type="search" id="site-search" name="q" />
+        <input type="text" id="site-search" name="q" placeholder="search..."/>
 
-        <button>Search</button>
+        <button id="search-btn" type="button">Search</button>
     </div>
     <div>
         <h2>Filter</h2>
+        <input type="checkbox" id="titleBook" name="titleBook" value="titleBook">
+        <label for="titleBook">Title</label><br>
         <input type="checkbox" id="author" name="author" value="author">
         <label for="author"> Author</label><br>
         <input type="checkbox" id="subject" name="subject" value="subject">
         <label for="subject"> Subject</label><br>
-        <input type="checkbox" id="search-text-line" name="search-text-line" value="search-text-line">
-        <label for="search-text-line">Search by text line</label><br>
+        
     </div>
-    <div>
-        <h1>Book Content</h1>
+    <div id="book-content">
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
